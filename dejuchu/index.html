@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>的居处 开门见山-理想居所设计与山水意境生活指南</title>
+    <meta name="description" content="的居处开门见山，探索将自然山景融入现代居住空间的设计理念与实践方法，提供户型选择、景观布局、室内外融合及生活美学参考。">
+    <meta name="keywords" content="的居处,开门见山,山景住宅,景观设计,自然居住,山水意境,户型,露台,庭院,生活方式">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+            background-color: #f7f5f0;
+            color: #2d2d2a;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 顶部导航 */
+        .site-header {
+            background: #fff;
+            border-bottom: 1px solid #e5e0d5;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #4a6b5d;
+            border-radius: 6px 12px 6px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            font-family: Georgia, serif;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d2d2a;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #6b8a7a;
+            font-weight: 300;
+            margin-left: 4px;
+        }
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #3a3a35;
+            font-size: 0.95rem;
+            font-weight: 400;
+            padding: 6px 2px;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .main-nav a:hover {
+            border-color: #6b8a7a;
+            color: #2d5a44;
+        }
+        /* hero */
+        .hero {
+            background: linear-gradient(135deg, #eef3ed 0%, #dfe8e0 100%);
+            padding: 80px 0 70px;
+            border-bottom: 1px solid #d8d2c4;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-copy h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #27342c;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .hero-copy h1 .accent {
+            display: block;
+            font-weight: 300;
+            font-size: 2rem;
+            color: #5d7a68;
+            margin-top: 8px;
+        }
+        .hero-copy p {
+            font-size: 1.15rem;
+            max-width: 560px;
+            color: #3e4a42;
+            margin-bottom: 30px;
+        }
+        .hero-btn {
+            display: inline-block;
+            background: #4a6b5d;
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+        .hero-btn:hover {
+            background: #34503f;
+        }
+        .hero-visual {
+            background: #cbd6cc;
+            height: 260px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3d4a40;
+            font-size: 1.2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+        }
+        .hero-visual::before {
+            content: "⛰️";
+            font-size: 80px;
+            opacity: 0.5;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        .hero-visual::after {
+            content: "🏡";
+            font-size: 60px;
+            position: absolute;
+            left: 40px;
+            bottom: 30px;
+            opacity: 0.8;
+        }
+        .hero-visual-text {
+            background: rgba(255,255,255,0.6);
+            padding: 10px 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+        }
+        /* 内容区通用 */
+        .section {
+            padding: 70px 0;
+        }
+        .section-alt {
+            background: #fff;
+            border-top: 1px solid #e5e0d5;
+            border-bottom: 1px solid #e5e0d5;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2b3a30;
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #6b8a7a;
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+        .section-sub {
+            color: #6b6b62;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+        /* 核心要点 */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .pillar-card {
+            background: #fcfbf8;
+            border: 1px solid #e0dcd0;
+            border-radius: 12px;
+            padding: 32px 24px;
+            transition: transform 0.2s;
+        }
+        .pillar-card:hover {
+            transform: translateY(-4px);
+        }
+        .pillar-icon {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+        .pillar-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2b3a30;
+        }
+        .pillar-card p {
+            font-size: 0.95rem;
+            color: #5a5a52;
+        }
+        /* 文章段落 */
+        .article-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        .article-text h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2b3a30;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .article-text p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+            color: #3f3f38;
+        }
+        .article-text strong {
+            color: #3e5f4e;
+        }
+        .quote-box {
+            background: #edf2ec;
+            border-left: 4px solid #4a6b5d;
+            padding: 20px 24px;
+            border-radius: 0 10px 10px 0;
+            margin: 24px 0;
+            font-style: italic;
+            color: #3d4a42;
+        }
+        /* 图片占位 */
+        .visual-placeholder {
+            background: #d9e0d6;
+            border-radius: 14px;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #4d5c51;
+            font-size: 1.1rem;
+            border: 1px dashed #9fb09f;
+            position: relative;
+        }
+        .visual-placeholder .ph-icon {
+            font-size: 5rem;
+            margin-bottom: 12px;
+        }
+        /* 设计建议列表 */
+        .tips-list {
+            list-style: none;
+            margin: 24px 0;
+        }
+        .tips-list li {
+            padding: 12px 0 12px 30px;
+            border-bottom: 1px solid #e3ded2;
+            position: relative;
+            font-size: 1rem;
+        }
+        .tips-list li::before {
+            content: "🌿";
+            position: absolute;
+            left: 0;
+            top: 12px;
+        }
+        /* 户型布局卡片 */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        .layout-card {
+            background: #f5f3ed;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid #ddd8ca;
+        }
+        .layout-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #2b3a30;
+        }
+        .layout-card p {
+            font-size: 0.95rem;
+            color: #4a4a42;
+        }
+        .layout-tag {
+            display: inline-block;
+            background: #4a6b5d;
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        /* 常见问题 */
+        .faq-item {
+            border-bottom: 1px solid #ddd6c8;
+            padding: 18px 0;
+        }
+        .faq-item summary {
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: #2b3a30;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: #4a6b5d;
+        }
+        .faq-item[open] summary::after {
+            content: "–";
+        }
+        .faq-item p {
+            padding: 14px 0 6px;
+            color: #4a4a42;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #2b342d;
+            color: #bec6bd;
+            padding: 50px 0 30px;
+            margin-top: 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+        .footer-grid h4 {
+            color: #e8eae4;
+            margin-bottom: 14px;
+            font-weight: 500;
+        }
+        .footer-grid p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        .footer-links a {
+            display: block;
+            color: #aab5a9;
+            text-decoration: none;
+            padding: 4px 0;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #3e4a40;
+            font-size: 0.85rem;
+            color: #8b9589;
+        }
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-copy h1 {
+                font-size: 2.2rem;
+            }
+            .pillars {
+                grid-template-columns: 1fr 1fr;
+            }
+            .article-block {
+                grid-template-columns: 1fr;
+            }
+            .layout-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+        @media (max-width: 600px) {
+            .main-nav ul {
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-top: 12px;
+            }
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+            .hero-copy h1 {
+                font-size: 1.9rem;
+            }
+            .section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">居</div>
+                <div class="logo-text">的居处<span>·开门见山</span></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#concept">居住理念</a></li>
+                    <li><a href="#layout">户型布局</a></li>
+                    <li><a href="#landscape">景观设计</a></li>
+                    <li><a href="#lifestyle">生活方式</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏 -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>的居处 开门见山<span class="accent">让山成为生活的背景</span></h1>
+                    <p>“的居处，开门见山”描述的是一种理想居所：推开门扉，山色入眼，自然与日常相融。这里探讨如何通过选址、布局与设计，让山景真正进入居住体验。</p>
+                    <a href="#concept" class="hero-btn">探索设计思路</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-visual-text">山景 · 住宅 · 自然</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心理念 -->
+        <section class="section" id="concept">
+            <div class="container">
+                <h2 class="section-title">何为“的居处 开门见山”</h2>
+                <p class="section-sub">从一句成语到一种居住理想：将山水意境融入现代生活</p>
+                <div class="pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🏔️</div>
+                        <h3>视觉通廊</h3>
+                        <p>建筑朝向与开窗方式决定山景能否成为日常视野的主角。通过客厅、卧室或书房的视线规划，让山体轮廓自然延伸入室内。</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🌲</div>
+                        <h3>内外过渡</h3>
+                        <p>露台、庭院、落地窗与半开放空间，模糊室内外界限。草木与岩石的质感延续，使居住获得“在山中”的沉浸体验。</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🧘</div>
+                        <h3>心境转化</h3>
+                        <p>开门见山不仅是景观，更是一种心理暗示——将自然的不动声色带入日常，帮助居住者放慢节奏，获得内在安定。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 详细解读 + 视觉 -->
+        <section class="section-alt">
+            <div class="container article-block">
+                <div class="article-text">
+                    <h2>从选址开始：山居的底层逻辑</h2>
+                    <p>真正实现“开门见山”，第一步并非设计，而是选址。理想位置应具备三个条件：<strong>山体朝向稳定</strong>（主要景观面朝山）、<strong>视距适中</strong>（山与建筑之间留有呼吸空间）、<strong>日照充足</strong>（避免山体阴影过重）。</p>
+                    <p>在城市近郊或风景区周边，坡地住宅比平地更容易获得开阔山景。建筑随地形抬升，使每一层都能拥有不同的观山角度。若土地平坦，则可通过抬高首层地面或设计屋顶露台来创造视角。</p>
+                    <div class="quote-box">
+                        “开门见山的本质，不是把山搬进家里，而是把家安在山能看见的地方，让日常生活拥有一个恒定的自然坐标。”
+                    </div>
+                    <p>对于多数购房者而言，若现有住宅无法改变朝向，仍可通过<strong>窗户改造、景观阳台封闭或室内绿植层次</strong>，在局部营造“见山”的意象——即便窗外是城市，也可借助垂直绿化与山石小品获得联想。</p>
+                </div>
+                <div class="visual-placeholder">
+                    <span class="ph-icon">🌄</span>
+                    <div>山景住宅剖面示意</div>
+                    <div style="font-size:0.85rem; margin-top:8px; opacity:0.7;">建筑与山体的视线关系</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 户型与布局 -->
+        <section class="section" id="layout">
+            <div class="container">
+                <h2 class="section-title">户型设计：如何让山进入每个房间</h2>
+                <p class="section-sub">不同空间与山的对话方式</p>
+                <div class="layout-grid">
+                    <div class="layout-card">
+                        <h3>客厅 · 横向取景</h3>
+                        <p>采用大面宽落地窗或折叠门，将山景作为客厅的“动态壁画”。沙发朝向宜垂直于窗，形成稳定的观景轴线。避免电视墙正对窗口，以免遮挡视线。</p>
+                        <span class="layout-tag">开间 ≥ 5m</span>
+                    </div>
+                    <div class="layout-card">
+                        <h3>卧室 · 晨光与山</h3>
+                        <p>主卧窗宜偏东或偏南，清晨光线与山体轮廓一同唤醒。床头墙面避免开窗，以保证睡眠深度。可设置低矮飘窗，作为阅读与观景的停留点。</p>
+                        <span class="layout-tag">窗台高度 40cm</span>
+                    </div>
+                    <div class="layout-card">
+                        <h3>书房 · 静观</h3>
+                        <p>书桌侧对窗口，而非正对，避免眩光同时可随时抬眼远望。窗外近景可配植松竹或置石，形成“近景—中景—远山”的层次。</p>
+                        <span class="layout-tag">侧向采光</span>
+                    </div>
+                    <div class="layout-card">
+                        <h3>露台 · 无边界体验</h3>
+                        <p>露台地面选用与山体相近的糙面石材，栏杆尽量通透或采用玻璃。可设置一处低矮坐台，让人在坐下时视线恰好越过栏杆看到山腰。</p>
+                        <span class="layout-tag">玻璃护栏</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 景观与细节 -->
+        <section class="section-alt" id="landscape">
+            <div class="container">
+                <h2 class="section-title">景观设计：让视线自然过渡</h2>
+                <p class="section-sub">从庭院到山的渐进式景观序列</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items:center;">
+                    <div>
+                        <ul class="tips-list">
+                            <li><strong>框景</strong>：利用门洞、窗框或植物剪影，将远处山峰“框”成一幅天然画作。</li>
+                            <li><strong>借景</strong>：不遮挡山体，保留从室内到山脊的视觉通廊，即使中间有邻居，也可通过树木高度控制实现。</li>
+                            <li><strong>补景</strong>：当山体部分不理想时，用本地乔木或竹丛补充前景，修正视觉焦点。</li>
+                            <li><strong>地景延续</strong>：从庭院铺设一条碎石或石板小径，方向指向山脚，暗示“通往自然”的路径。</li>
+                            <li><strong>季节变化</strong>：选择落叶与常绿混植，让窗外风景随四季流转，丰富山景的表情。</li>
+                        </ul>
+                    </div>
+                    <div class="visual-placeholder" style="height:280px;">
+                        <span class="ph-icon">🎋</span>
+                        <div>庭院景观层次分析</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 生活方式 -->
+        <section class="section" id="lifestyle">
+            <div class="container">
+                <h2 class="section-title">居住日常：与山相处的智慧</h2>
+                <p class="section-sub">实用建议与生活态度</p>
+                <div class="article-block">
+                    <div class="article-text">
+                        <p>拥有“开门见山”的居所，意味着生活节奏会自然改变。清晨不必刻意安排，远山静立足以安抚心神；傍晚的光线在山脊上移动，成为家中最精准的时钟。</p>
+                        <p>但山居也需面对现实：<strong>湿度管理</strong>（山边住宅需加强防潮）、<strong>交通依赖</strong>（通常需备车）、<strong>社区配套</strong>（医疗与商业距离）。建议在选择前，先在山边民宿试住一周，感受真实的生活动线。</p>
+                        <p>对于暂时无法拥有山景住宅的人，同样可以实践“开门见山”的精神：在玄关摆放一块山形奇石，或在阳台营造微缩山景，让每次归家都有一个自然的落点。</p>
+                    </div>
+                    <div class="visual-placeholder" style="height:220px;">
+                        <span class="ph-icon">🍵</span>
+                        <div>晨间观山 · 一杯茶的时间</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section-alt" id="faq">
+            <div class="container" style="max-width: 860px;">
+                <h2 class="section-title">常见问题</h2>
+                <p class="section-sub">关于山景住宅与“开门见山”的几点疑问</p>
+                <div class="faq-item">
+                    <details>
+                        <summary>山景住宅一定很贵吗？</summary>
+                        <p>不一定。山景溢价主要出现在风景保护区和成熟别墅区。在二三线城市的近郊，坡地住宅或高层山景户型可能比城市核心区公寓更实惠。关键是明确自己的核心需求——是追求纯粹山居，还是希望便利与景观平衡。</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>如何判断一个房子是否真的“开门见山”？</summary>
+                        <p>建议在不同季节、不同时段（早晨、下午、雨后）到现场观察。注意山体是否会被周边建筑或树木遮挡，冬季落叶后视线是否会改变。另外，要亲自站在室内各主要房间，模拟日常动作（坐、卧、站立）时的视线高度。</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>城市住宅能实现类似效果吗？</summary>
+                        <p>可以借助三种方式：一是选择高层住宅面向城市公园或远山的方向；二是通过大面窗与阳台绿化，形成“绿意前景+远景天际线”的组合；三是用室内设计手法（如山水画、山形摆件）创造象征性的“见山”感受。</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>山边居住有哪些注意事项？</summary>
+                        <p>需关注地质稳定性（避开滑坡区）、雨季排水系统、防潮与通风设计、以及野生动物出没的可能。购房前应查阅当地地质灾害分区图，并咨询有山居经验的朋友。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>的居处 · 开门见山</h4>
+                    <p>一个专注于山水居住美学与自然生活方式的指南平台。我们相信，好的居所是人与自然之间的温柔对话。</p>
+                </div>
+                <div>
+                    <h4>内容栏目</h4>
+                    <div class="footer-links">
+                        <a href="#concept">居住理念</a>
+                        <a href="#layout">户型布局</a>
+                        <a href="#landscape">景观设计</a>
+                        <a href="#lifestyle">生活方式</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>参考信息</h4>
+                    <div class="footer-links">
+                        <a href="#faq">常见问题</a>
+                        <a href="#">关于我们</a>
+                        <a href="#">联系合作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 的居处开门见山 · 自然居住指南 | 本页内容仅供参考，不构成投资或购房建议</p>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
