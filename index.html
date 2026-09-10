@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑兽2-黑暗奇幻世界设定与角色剧情深度解析</title>
+    <meta name="description" content="黑兽2世界观设定、种族与势力分布、核心角色背景与剧情脉络解析，带你深入了解这部黑暗奇幻作品的故事内核与独特魅力。">
+    <meta name="keywords" content="黑兽2,黑暗奇幻,世界观设定,角色解析,剧情分析,种族势力">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #1a1a1d;
+            color: #e8e6e3;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            background: #1a1a1d;
+            border-bottom: 3px solid #8b0000;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #f2f2f2;
+            text-transform: uppercase;
+        }
+        .logo span {
+            color: #c0392b;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+            letter-spacing: 1px;
+        }
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0f0f12 0%, #232327 100%);
+            padding: 80px 0;
+            border-bottom: 1px solid #333;
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero h1 {
+            font-size: 44px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 18px;
+            line-height: 1.2;
+            border-left: 6px solid #c0392b;
+            padding-left: 22px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #b8b8b8;
+            margin-bottom: 28px;
+            max-width: 650px;
+        }
+        .hero-tags {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .hero-tag {
+            background: rgba(192, 57, 43, 0.2);
+            border: 1px solid #c0392b;
+            color: #e8a0a0;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: #eee;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 14px;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: #c0392b;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .card-dark {
+            background: #252529;
+            border: 1px solid #3a3a3f;
+            border-radius: 8px;
+            padding: 28px;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+        .card-dark:hover {
+            transform: translateY(-4px);
+            border-color: #c0392b;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+        .card-dark h3 {
+            font-size: 20px;
+            color: #f0f0f0;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .card-dark p {
+            color: #a5a5a5;
+            font-size: 15px;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 4px;
+            bottom: 4px;
+            width: 2px;
+            background: #444;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 32px;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -27px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            background: #c0392b;
+            border-radius: 50%;
+            border: 2px solid #1a1a1d;
+        }
+        .timeline-item h3 {
+            font-size: 19px;
+            color: #e0e0e0;
+            margin-bottom: 6px;
+        }
+        .timeline-item p {
+            color: #9a9a9a;
+            font-size: 15px;
+        }
+        .table-wrap {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background: #2c2c31;
+            color: #ddd;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #c0392b;
+        }
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #333;
+            color: #aaa;
+            font-size: 15px;
+        }
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .quote-block {
+            background: #1f1f23;
+            border-left: 5px solid #c0392b;
+            padding: 28px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #c0c0c0;
+            border-radius: 0 8px 8px 0;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            background: #222226;
+            border-radius: 6px;
+            padding: 20px 24px;
+            border-left: 4px solid #c0392b;
+        }
+        .faq-item h3 {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #999;
+            font-size: 15px;
+        }
+        .cta-banner {
+            background: linear-gradient(90deg, #1a1a1d 0%, #2d2d33 100%);
+            border: 1px solid #3a3a3f;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta-banner h2 {
+            font-size: 26px;
+            color: #eee;
+            margin-bottom: 12px;
+        }
+        .cta-banner p {
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #c0392b;
+            color: #fff;
+            padding: 10px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #e74c3c;
+        }
+        footer {
+            background: #111113;
+            border-top: 1px solid #2a2a2e;
+            padding: 30px 0;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #c0392b;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .cta-banner {
+                padding: 24px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 0;
+            }
+            .hero h1 {
+                font-size: 26px;
+            }
+            .section-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-wrap">
+            <div class="logo">黑兽<span>2</span></div>
+            <ul class="nav-links">
+                <li><a href="#world">世界观</a></li>
+                <li><a href="#characters">角色</a></li>
+                <li><a href="#story">剧情脉络</a></li>
+                <li><a href="#races">种族势力</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>黑兽2：黑暗奇幻世界的宏大叙事与角色群像</h1>
+                <p>《黑兽2》延续了前作奠定的暗黑美学基调，在更广阔的地域版图上展开了一场关于权力、信仰与生存的沉重物语。本作不仅深化了原有设定，更引入了全新的势力平衡与角色命运交织，为读者带来沉浸式的黑暗奇幻体验。</p>
+                <div class="hero-tags">
+                    <span class="hero-tag">黑暗奇幻</span>
+                    <span class="hero-tag">权力斗争</span>
+                    <span class="hero-tag">多势力叙事</span>
+                    <span class="hero-tag">深度角色塑造</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="section" id="world">
+            <div class="container">
+                <h2 class="section-title">世界观设定：被阴影笼罩的大地</h2>
+                <div class="grid-2">
+                    <div class="card-dark">
+                        <span class="card-icon">🌑</span>
+                        <h3>大陆概况</h3>
+                        <p>故事发生在名为"艾尔德兰"的幻想大陆，这片土地曾沐浴在圣光之下，但一场名为"黑潮"的灾变彻底改变了世界格局。黑兽2的时间线设定在黑潮爆发后的第三十个年头，大陆各处仍残留着异变的痕迹，而幸存者们在废墟上建立了新的秩序。</p>
+                    </div>
+                    <div class="card-dark">
+                        <span class="card-icon">⚔️</span>
+                        <h3>核心冲突</h3>
+                        <p>表面上是人类王国、精灵遗族与兽人部落之间的领土纷争，但暗处涌动的是关于"黑兽之力"的争夺——一种源自黑潮的神秘能量，能够赋予持有者强大的力量，却也伴随着腐蚀心智的巨大代价。</p>
+                    </div>
+                </div>
+                <div class="quote-block">
+                    "当黑暗不再是外部的威胁，而是内心深处的回响时，真正的战斗才刚刚开始。" —— 黑兽2序章引言
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="characters">
+            <div class="container">
+                <h2 class="section-title">核心角色解析：挣扎于命运漩涡之中</h2>
+                <div class="grid-3">
+                    <div class="card-dark">
+                        <span class="card-icon">🗡️</span>
+                        <h3>埃德温·灰烬</h3>
+                        <p>前圣殿骑士，因黑潮失去至亲后堕入黑暗。作为本作主角之一，他在复仇与救赎之间摇摆，其一手持剑一手握紧黑兽碎片的形象极具张力。他的选择将直接影响大陆的未来走向。</p>
+                    </div>
+                    <div class="card-dark">
+                        <span class="card-icon">🦉</span>
+                        <h3>瑟拉菲娜</h3>
+                        <p>精灵遗族的最后一位"月语者"，拥有解读黑兽低语的能力。她以冷静理性的视角观察着人类王国的动荡，但自身也背负着种族存续的沉重使命，立场微妙而复杂。</p>
+                    </div>
+                    <div class="card-dark">
+                        <span class="card-icon">🐺</span>
+                        <h3>格罗姆·铁牙</h3>
+                        <p>北方兽人部落的战酋，看似粗犷不羁，实则心思缜密。他并不完全信任黑兽之力，却不得不借助它来抵御来自南方人类王国的军事压力。他的部落正处在传统与现代抉择的十字路口。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="story">
+            <div class="container">
+                <h2 class="section-title">剧情脉络与关键节点</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>序幕 · 灰烬之年</h3>
+                        <p>黑潮爆发三十周年纪念日当天，边境城镇"维尔顿"突然陷入异变，所有居民在一夜之间化为灰烬。埃德温奉命前往调查，却发现现场残留着与自己有关的黑兽印记。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>第一卷 · 遗族之约</h3>
+                        <p>埃德温在追踪线索途中遭遇瑟拉菲娜，两人被迫结盟。精灵遗族内部对于是否介入人类事务产生了严重分歧，而兽人部落的侦察兵也在暗中监视着他们的行动。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>第二卷 · 王冠之下</h3>
+                        <p>人类王国"赫尔维蒂"的宫廷阴谋逐渐浮出水面。年轻的女王试图以黑兽之力巩固王权，却不知自己已被更古老的势力操纵。格罗姆率领的兽人使团抵达王都，外交谈判暗藏杀机。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>第三卷 · 深渊回响</h3>
+                        <p>三大势力因一场突如其来的黑兽暴走事件被迫联手，深入黑潮的源头——深渊裂谷。在那里，他们发现了关于黑兽真正起源的惊悚真相，以及一个足以颠覆所有认知的预言。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="races">
+            <div class="container">
+                <h2 class="section-title">主要种族与势力分布</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>势力名称</th>
+                                <th>核心领地</th>
+                                <th>信仰/理念</th>
+                                <th>对黑兽态度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>赫尔维蒂王国</td>
+                                <td>大陆中部平原</td>
+                                <td>圣光正统论</td>
+                                <td>暗中研究并试图掌控</td>
+                            </tr>
+                            <tr>
+                                <td>艾尔森林遗族</td>
+                                <td>东部迷雾森林</td>
+                                <td>自然平衡之道</td>
+                                <td>谨慎观察，少数派主张封印</td>
+                            </tr>
+                            <tr>
+                                <td>铁牙部落联盟</td>
+                                <td>北方冻土高原</td>
+                                <td>先祖之魂崇拜</td>
+                                <td>有限度使用，警惕腐蚀</td>
+                            </tr>
+                            <tr>
+                                <td>灰烬教团</td>
+                                <td>地下暗城"诺克提斯"</td>
+                                <td>黑兽启示录</td>
+                                <td>狂热崇拜，视其为神启</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 20px; color: #888; font-size: 14px;">※ 以上势力分布基于黑兽2前期剧情公开信息整理，后续剧情可能涉及变动。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">作品特色与阅读价值</h2>
+                <div class="grid-2">
+                    <div class="card-dark">
+                        <span class="card-icon">🎨</span>
+                        <h3>视觉风格</h3>
+                        <p>延续了黑暗奇幻题材特有的高对比度画面语言，利用大量阴影与暗色调营造沉重氛围。但在关键情感场景中，又通过光影的细腻变化展现角色的内心温度，形成强烈的艺术张力。</p>
+                    </div>
+                    <div class="card-dark">
+                        <span class="card-icon">📖</span>
+                        <h3>叙事手法</h3>
+                        <p>采用多线叙事结构，从三位主角的不同视角切入同一事件，让读者在拼凑真相的过程中感受到世界观的全貌。每卷结尾均设有悬念节点，保持叙事节奏的紧凑感。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题速览</h2>
+                <div class="faq-item">
+                    <h3>Q1: 黑兽2与前作在设定上有何关联？</h3>
+                    <p>黑兽2的故事发生在前作时间线的数十年后，世界观基础一脉相承。但本作更侧重于描绘黑潮之后的社会重构过程，新读者无需完整了解前作细节也能顺利进入剧情，当然熟悉前作会获得更多彩蛋乐趣。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q2: 作品的整体基调是否非常压抑？</h3>
+                    <p>虽然背景设定偏向黑暗沉重，但故事并不缺乏希望的火花。角色之间的羁绊、在绝境中展现的人性光芒，以及偶尔出现的幽默调剂，都让整体叙事保持平衡。建议读者根据自身对黑暗题材的接受度进行选择。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q3: 目前作品更新到哪一阶段？</h3>
+                    <p>根据已公开的信息，主线剧情推进至第三卷"深渊回响"阶段，后续章节仍在持续创作中。建议关注官方渠道获取最新发布动态，以免错过剧情更新。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q4: 适合什么类型的读者观看？</h3>
+                    <p>适合喜爱复杂世界观构建、注重角色心理刻画、对权力斗争与道德困境感兴趣的读者。若偏好轻松明快的风格，则可能与本作氛围存在差异。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-banner">
+                    <h2>踏入艾尔德兰的暗影深处</h2>
+                    <p>如果你想亲自体验这段充满抉择与挣扎的黑暗旅程，建议从第一卷开始阅读，逐步感受世界的厚度。</p>
+                    <a href="#" class="btn" onclick="return false;">了解更多阅读渠道</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#world">世界观</a>
+                <a href="#characters">角色</a>
+                <a href="#story">剧情</a>
+                <a href="#races">势力</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <p>© 2024 黑兽2 资料站 · 本页面仅作为作品信息交流与分享，不承担任何商业用途。</p>
+        </div>
+    </footer>
+</body>
+</html>
